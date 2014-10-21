@@ -1,0 +1,157 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{AC274B9D-E003-47E7-877F-6FE54FB889EC}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>movies_service</RootNamespace>
+    <AssemblyName>movies_service</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework">
+      <HintPath>..\packages\EntityFramework.5.0.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Class1.cs" />
+    <Compile Include="Data\Connection.cs" />
+    <Compile Include="Data\DAKorisnici.cs" />
+    <Compile Include="Data\Dobavljaci.cs">
+      <DependentUpon>movies_model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\Izlazi.cs">
+      <DependentUpon>movies_model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\IzlazStavke.cs">
+      <DependentUpon>movies_model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\JediniceMjere.cs">
+      <DependentUpon>movies_model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\Korisnici.cs">
+      <DependentUpon>movies_model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\KorisniciUloge.cs">
+      <DependentUpon>movies_model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\Kupci.cs">
+      <DependentUpon>movies_model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\movies_model.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>movies_model.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\movies_model.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>movies_model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\movies_model.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>movies_model.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Data\msp_Uloge_SelectAll_Result.cs">
+      <DependentUpon>movies_model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\NarudzbaStavke.cs">
+      <DependentUpon>movies_model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\Narudzbe.cs">
+      <DependentUpon>movies_model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\Ocjene.cs">
+      <DependentUpon>movies_model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\Proizvodi.cs">
+      <DependentUpon>movies_model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\Skladista.cs">
+      <DependentUpon>movies_model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\Ulazi.cs">
+      <DependentUpon>movies_model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\UlazStavke.cs">
+      <DependentUpon>movies_model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\Uloge.cs">
+      <DependentUpon>movies_model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\VrsteProizvoda.cs">
+      <DependentUpon>movies_model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EntityDeploy Include="Data\movies_model.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>movies_model.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.Config" />
+    <None Include="Data\movies_model.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>movies_model.edmx</DependentUpon>
+      <LastGenOutput>movies_model.Context.cs</LastGenOutput>
+    </None>
+    <None Include="Data\movies_model.edmx.diagram">
+      <DependentUpon>movies_model.edmx</DependentUpon>
+    </None>
+    <None Include="Data\movies_model.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>movies_model.edmx</DependentUpon>
+      <LastGenOutput>movies_model.cs</LastGenOutput>
+    </None>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Util\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="29e9194379dd411e9d8273d16c5a4454" Name="Diagram1">
+        <EntityTypeShape EntityType="MoviesModel.Dobavljaci" Width="1.5" PointX="0.75" PointY="23.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="MoviesModel.Izlazi" Width="1.5" PointX="3" PointY="15.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="MoviesModel.IzlazStavke" Width="1.5" PointX="5.25" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MoviesModel.JediniceMjere" Width="1.5" PointX="0.75" PointY="7.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="MoviesModel.Korisnici" Width="1.5" PointX="0.75" PointY="11.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="MoviesModel.KorisniciUloge" Width="1.5" PointX="3" PointY="11.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="MoviesModel.Kupci" Width="1.5" PointX="3" PointY="1.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="MoviesModel.NarudzbaStavke" Width="1.5" PointX="8.25" PointY="6.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="MoviesModel.Narudzbe" Width="1.5" PointX="0.75" PointY="16.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="MoviesModel.Ocjene" Width="1.5" PointX="5.25" PointY="2.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MoviesModel.Proizvodi" Width="1.5" PointX="3" PointY="6" IsExpanded="true" />
+        <EntityTypeShape EntityType="MoviesModel.Skladista" Width="1.5" PointX="0.75" PointY="19.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="MoviesModel.Ulazi" Width="1.5" PointX="3" PointY="23.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="MoviesModel.UlazStavke" Width="1.5" PointX="5.25" PointY="10.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MoviesModel.Uloge" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MoviesModel.VrsteProizvoda" Width="1.5" PointX="0.75" PointY="4.25" IsExpanded="true" />
+        <AssociationConnector Association="MoviesModel.FK_Ulazi_Dobavljaci" ManuallyRouted="false" />
+        <AssociationConnector Association="MoviesModel.FK_Izlazi_Korisnici" ManuallyRouted="false" />
+        <AssociationConnector Association="MoviesModel.FK_Izlazi_Narudzbe" ManuallyRouted="false" />
+        <AssociationConnector Association="MoviesModel.FK_Izlazi_Skladista" ManuallyRouted="false" />
+        <AssociationConnector Association="MoviesModel.FK_IzlazStavke_Izlazi" ManuallyRouted="false" />
+        <AssociationConnector Association="MoviesModel.FK_IzlazStavke_Proizvodi" ManuallyRouted="false" />
+        <AssociationConnector Association="MoviesModel.FK_Proizvodi_JediniceMjere" ManuallyRouted="false" />
+        <AssociationConnector Association="MoviesModel.FK_KorisniciUloge_Korisnici" ManuallyRouted="false" />
+        <AssociationConnector Association="MoviesModel.FK_Ulazi_Korisnici" ManuallyRouted="false" />
+        <AssociationConnector Association="MoviesModel.FK_KorisniciUloge_Uloge" ManuallyRouted="false" />
+        <AssociationConnector Association="MoviesModel.FK_Narudzbe_Kupci" ManuallyRouted="false" />
+        <AssociationConnector Association="MoviesModel.FK_Ocjene_Kupci" ManuallyRouted="false" />
+        <AssociationConnector Association="MoviesModel.FK_NarudzbaStavke_Narudzbe" ManuallyRouted="false" />
+        <AssociationConnector Association="MoviesModel.FK_NarudzbaStavke_Proizvodi" ManuallyRouted="false" />
+        <AssociationConnector Association="MoviesModel.FK_Ocjene_Proizvodi" ManuallyRouted="false" />
+        <AssociationConnector Association="MoviesModel.FK_Proizvodi_VrsteProizvoda" ManuallyRouted="false" />
+        <AssociationConnector Association="MoviesModel.FK_UlazStavke_Proizvodi" ManuallyRouted="false" />
+        <AssociationConnector Association="MoviesModel.FK_Ulazi_Skladista" ManuallyRouted="false" />
+        <AssociationConnector Association="MoviesModel.FK_UlazStavke_Ulazi" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
