@@ -8,6 +8,6 @@ namespace movies_service.Data
 {
    public class Connection
     {
-       public static MoviesEntities dm = new MoviesEntities();
+       public static moviesEntities dm = new moviesEntities();
     }
 }

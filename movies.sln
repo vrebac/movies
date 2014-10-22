@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "movies_desktop", "movies_de
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "movies_service", "movies_service\movies_service.csproj", "{AC274B9D-E003-47E7-877F-6FE54FB889EC}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "movies_web", "movies_web\movies_web.csproj", "{E66BD93F-FFDA-4CD9-AECB-976BDE46B0CC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,12 @@ Global
 		{AC274B9D-E003-47E7-877F-6FE54FB889EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AC274B9D-E003-47E7-877F-6FE54FB889EC}.Release|Any CPU.Build.0 = Release|Any CPU
 		{AC274B9D-E003-47E7-877F-6FE54FB889EC}.Release|x86.ActiveCfg = Release|Any CPU
+		{E66BD93F-FFDA-4CD9-AECB-976BDE46B0CC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E66BD93F-FFDA-4CD9-AECB-976BDE46B0CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E66BD93F-FFDA-4CD9-AECB-976BDE46B0CC}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{E66BD93F-FFDA-4CD9-AECB-976BDE46B0CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E66BD93F-FFDA-4CD9-AECB-976BDE46B0CC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E66BD93F-FFDA-4CD9-AECB-976BDE46B0CC}.Release|x86.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
