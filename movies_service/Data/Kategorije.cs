@@ -12,16 +12,16 @@ namespace movies_service.Data
     using System;
     using System.Collections.Generic;
     
-    public partial class JediniceMjere
+    public partial class Kategorije
     {
-        public JediniceMjere()
+        public Kategorije()
         {
-            this.Proizvodi = new HashSet<Proizvodi>();
+            this.ProizvodiKategorijes = new HashSet<ProizvodiKategorije>();
         }
     
-        public int JedinicaMjereID { get; set; }
+        public int KategorijaID { get; set; }
         public string Naziv { get; set; }
     
-        public virtual ICollection<Proizvodi> Proizvodi { get; set; }
+        public virtual ICollection<ProizvodiKategorije> ProizvodiKategorijes { get; set; }
     }
 }

@@ -12,15 +12,13 @@ namespace movies_service.Data
     using System;
     using System.Collections.Generic;
     
-    public partial class Ocjene
+    public partial class ProizvodiKategorije
     {
-        public int OcjenaID { get; set; }
+        public int ProizvodKategorijaID { get; set; }
         public int ProizvodID { get; set; }
-        public int KupacID { get; set; }
-        public System.DateTime Datum { get; set; }
-        public int Ocjena { get; set; }
+        public int KategorijaID { get; set; }
     
-        public virtual Kupci Kupci { get; set; }
+        public virtual Kategorije Kategorije { get; set; }
         public virtual Proizvodi Proizvodi { get; set; }
     }
 }

@@ -14,12 +14,6 @@ namespace movies_service.Data
     
     public partial class Narudzbe
     {
-        public Narudzbe()
-        {
-            this.Izlazi = new HashSet<Izlazi>();
-            this.NarudzbaStavke = new HashSet<NarudzbaStavke>();
-        }
-    
         public int NarudzbaID { get; set; }
         public string BrojNarudzbe { get; set; }
         public int KupacID { get; set; }
@@ -27,8 +21,6 @@ namespace movies_service.Data
         public bool Status { get; set; }
         public Nullable<bool> Otkazano { get; set; }
     
-        public virtual ICollection<Izlazi> Izlazi { get; set; }
         public virtual Kupci Kupci { get; set; }
-        public virtual ICollection<NarudzbaStavke> NarudzbaStavke { get; set; }
     }
 }

@@ -16,8 +16,7 @@ namespace movies_service.Data
     {
         public Kupci()
         {
-            this.Narudzbe = new HashSet<Narudzbe>();
-            this.Ocjene = new HashSet<Ocjene>();
+            this.Narudzbes = new HashSet<Narudzbe>();
         }
     
         public int KupacID { get; set; }
@@ -30,7 +29,6 @@ namespace movies_service.Data
         public string LozinkaSalt { get; set; }
         public bool Status { get; set; }
     
-        public virtual ICollection<Narudzbe> Narudzbe { get; set; }
-        public virtual ICollection<Ocjene> Ocjene { get; set; }
+        public virtual ICollection<Narudzbe> Narudzbes { get; set; }
     }
 }

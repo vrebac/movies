@@ -14,15 +14,8 @@ namespace movies_service.Data
     
     public partial class Uloge
     {
-        public Uloge()
-        {
-            this.KorisniciUloge = new HashSet<KorisniciUloge>();
-        }
-    
         public int UlogaID { get; set; }
         public string Naziv { get; set; }
         public string Opis { get; set; }
-    
-        public virtual ICollection<KorisniciUloge> KorisniciUloge { get; set; }
     }
 }

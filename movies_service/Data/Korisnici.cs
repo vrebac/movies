@@ -14,13 +14,6 @@ namespace movies_service.Data
     
     public partial class Korisnici
     {
-        public Korisnici()
-        {
-            this.Izlazi = new HashSet<Izlazi>();
-            this.KorisniciUloge = new HashSet<KorisniciUloge>();
-            this.Ulazi = new HashSet<Ulazi>();
-        }
-    
         public int KorisnikID { get; set; }
         public string Ime { get; set; }
         public string Prezime { get; set; }
@@ -30,9 +23,5 @@ namespace movies_service.Data
         public string LozinkaHash { get; set; }
         public string LozinkaSalt { get; set; }
         public bool Status { get; set; }
-    
-        public virtual ICollection<Izlazi> Izlazi { get; set; }
-        public virtual ICollection<KorisniciUloge> KorisniciUloge { get; set; }
-        public virtual ICollection<Ulazi> Ulazi { get; set; }
     }
 }

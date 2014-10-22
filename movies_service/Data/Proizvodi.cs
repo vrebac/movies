@@ -16,27 +16,23 @@ namespace movies_service.Data
     {
         public Proizvodi()
         {
-            this.IzlazStavke = new HashSet<IzlazStavke>();
-            this.NarudzbaStavke = new HashSet<NarudzbaStavke>();
-            this.Ocjene = new HashSet<Ocjene>();
-            this.UlazStavke = new HashSet<UlazStavke>();
+            this.ProizvodiGlumcis = new HashSet<ProizvodiGlumci>();
+            this.ProizvodiKategorijes = new HashSet<ProizvodiKategorije>();
         }
     
         public int ProizvodID { get; set; }
         public string Naziv { get; set; }
         public string Sifra { get; set; }
         public decimal Cijena { get; set; }
-        public int VrstaID { get; set; }
-        public int JedinicaMjereID { get; set; }
         public byte[] Slika { get; set; }
         public byte[] SlikaThumb { get; set; }
         public bool Status { get; set; }
+        public int GodinaIzdavanja { get; set; }
+        public string Opis { get; set; }
+        public int ReziserID { get; set; }
     
-        public virtual ICollection<IzlazStavke> IzlazStavke { get; set; }
-        public virtual JediniceMjere JediniceMjere { get; set; }
-        public virtual ICollection<NarudzbaStavke> NarudzbaStavke { get; set; }
-        public virtual ICollection<Ocjene> Ocjene { get; set; }
-        public virtual VrsteProizvoda VrsteProizvoda { get; set; }
-        public virtual ICollection<UlazStavke> UlazStavke { get; set; }
+        public virtual Reziseri Reziseri { get; set; }
+        public virtual ICollection<ProizvodiGlumci> ProizvodiGlumcis { get; set; }
+        public virtual ICollection<ProizvodiKategorije> ProizvodiKategorijes { get; set; }
     }
 }

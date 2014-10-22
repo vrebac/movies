@@ -12,16 +12,19 @@ namespace movies_service.Data
     using System;
     using System.Collections.Generic;
     
-    public partial class VrsteProizvoda
+    public partial class Reziseri
     {
-        public VrsteProizvoda()
+        public Reziseri()
         {
-            this.Proizvodi = new HashSet<Proizvodi>();
+            this.Proizvodis = new HashSet<Proizvodi>();
         }
     
-        public int VrstaID { get; set; }
-        public string Naziv { get; set; }
+        public int ReziserID { get; set; }
+        public string Ime { get; set; }
+        public string Prezime { get; set; }
+        public string DatumRodjenja { get; set; }
+        public string Bio { get; set; }
     
-        public virtual ICollection<Proizvodi> Proizvodi { get; set; }
+        public virtual ICollection<Proizvodi> Proizvodis { get; set; }
     }
 }

@@ -49,94 +49,71 @@
     <Compile Include="Class1.cs" />
     <Compile Include="Data\Connection.cs" />
     <Compile Include="Data\DAKorisnici.cs" />
-    <Compile Include="Data\Dobavljaci.cs">
-      <DependentUpon>movies_model.tt</DependentUpon>
+    <Compile Include="Data\Glumci.cs">
+      <DependentUpon>Model.tt</DependentUpon>
     </Compile>
-    <Compile Include="Data\Izlazi.cs">
-      <DependentUpon>movies_model.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Data\IzlazStavke.cs">
-      <DependentUpon>movies_model.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Data\JediniceMjere.cs">
-      <DependentUpon>movies_model.tt</DependentUpon>
+    <Compile Include="Data\Kategorije.cs">
+      <DependentUpon>Model.tt</DependentUpon>
     </Compile>
     <Compile Include="Data\Korisnici.cs">
-      <DependentUpon>movies_model.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Data\KorisniciUloge.cs">
-      <DependentUpon>movies_model.tt</DependentUpon>
+      <DependentUpon>Model.tt</DependentUpon>
     </Compile>
     <Compile Include="Data\Kupci.cs">
-      <DependentUpon>movies_model.tt</DependentUpon>
+      <DependentUpon>Model.tt</DependentUpon>
     </Compile>
-    <Compile Include="Data\movies_model.Context.cs">
+    <Compile Include="Data\Model.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>movies_model.Context.tt</DependentUpon>
+      <DependentUpon>Model.Context.tt</DependentUpon>
     </Compile>
-    <Compile Include="Data\movies_model.cs">
+    <Compile Include="Data\Model.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>movies_model.tt</DependentUpon>
+      <DependentUpon>Model.tt</DependentUpon>
     </Compile>
-    <Compile Include="Data\movies_model.Designer.cs">
+    <Compile Include="Data\Model.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>movies_model.edmx</DependentUpon>
-    </Compile>
-    <Compile Include="Data\msp_Uloge_SelectAll_Result.cs">
-      <DependentUpon>movies_model.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Data\NarudzbaStavke.cs">
-      <DependentUpon>movies_model.tt</DependentUpon>
+      <DependentUpon>Model.edmx</DependentUpon>
     </Compile>
     <Compile Include="Data\Narudzbe.cs">
-      <DependentUpon>movies_model.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Data\Ocjene.cs">
-      <DependentUpon>movies_model.tt</DependentUpon>
+      <DependentUpon>Model.tt</DependentUpon>
     </Compile>
     <Compile Include="Data\Proizvodi.cs">
-      <DependentUpon>movies_model.tt</DependentUpon>
+      <DependentUpon>Model.tt</DependentUpon>
     </Compile>
-    <Compile Include="Data\Skladista.cs">
-      <DependentUpon>movies_model.tt</DependentUpon>
+    <Compile Include="Data\ProizvodiGlumci.cs">
+      <DependentUpon>Model.tt</DependentUpon>
     </Compile>
-    <Compile Include="Data\Ulazi.cs">
-      <DependentUpon>movies_model.tt</DependentUpon>
+    <Compile Include="Data\ProizvodiKategorije.cs">
+      <DependentUpon>Model.tt</DependentUpon>
     </Compile>
-    <Compile Include="Data\UlazStavke.cs">
-      <DependentUpon>movies_model.tt</DependentUpon>
+    <Compile Include="Data\Reziseri.cs">
+      <DependentUpon>Model.tt</DependentUpon>
     </Compile>
     <Compile Include="Data\Uloge.cs">
-      <DependentUpon>movies_model.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Data\VrsteProizvoda.cs">
-      <DependentUpon>movies_model.tt</DependentUpon>
+      <DependentUpon>Model.tt</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <EntityDeploy Include="Data\movies_model.edmx">
-      <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>movies_model.Designer.cs</LastGenOutput>
-    </EntityDeploy>
-  </ItemGroup>
-  <ItemGroup>
     <None Include="App.Config" />
-    <None Include="Data\movies_model.Context.tt">
+    <EntityDeploy Include="Data\Model.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>Model.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="Data\Model.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>movies_model.edmx</DependentUpon>
-      <LastGenOutput>movies_model.Context.cs</LastGenOutput>
+      <DependentUpon>Model.edmx</DependentUpon>
+      <LastGenOutput>Model.Context.cs</LastGenOutput>
     </None>
-    <None Include="Data\movies_model.edmx.diagram">
-      <DependentUpon>movies_model.edmx</DependentUpon>
+    <None Include="Data\Model.edmx.diagram">
+      <DependentUpon>Model.edmx</DependentUpon>
     </None>
-    <None Include="Data\movies_model.tt">
+    <None Include="Data\Model.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>movies_model.edmx</DependentUpon>
-      <LastGenOutput>movies_model.cs</LastGenOutput>
+      <DependentUpon>Model.edmx</DependentUpon>
+      <LastGenOutput>Model.cs</LastGenOutput>
     </None>
     <None Include="packages.config" />
   </ItemGroup>
